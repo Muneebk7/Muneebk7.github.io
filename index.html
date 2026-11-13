@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Muneeb Khan – AI Undergraduate</title>
+  <meta name="description" content="Portfolio of Muneeb Khan, final-year BS Artificial Intelligence student from Bannu, Pakistan.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --desk: #3f4d4a;
+      --paper: #fbfaf6;
+      --ink: #23211f;
+      --faded: #66625b;
+      --rule: #b9b4a8;
+      --link: #1d4f7a;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--desk);
+      color: var(--ink);
+      font-family: "Special Elite", "Courier New", Courier, monospace;
+      font-size: 16px;
+      line-height: 1.65;
+    }
+    a { color: var(--link); }
+    a:focus-visible { outline: 3px solid var(--link); outline-offset: 2px; }
+
+    /* The sheet of paper */
+    .desk { padding: 40px 16px; }
+    .paper {
+      max-width: 800px;
+      margin: 0 auto;
+      background: var(--paper);
+      padding: 56px 64px 64px;
+      box-shadow: 0 2px 4px rgba(0,0,0,.25), 0 14px 40px rgba(0,0,0,.35);
+    }
+
+    /* Header, typed out once */
+    h1 {
+      display: inline-block;
+      margin: 0 0 6px;
+      font-size: clamp(1.9rem, 8vw, 2.8rem);
+      font-weight: normal;
+      line-height: 1.2;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: .08em solid var(--ink);
+      width: 12ch;
+      animation: type 1.4s steps(12, end) 1, caret .8s step-end 4 forwards;
+    }
+    @keyframes type { from { width: 0; } to { width: 12ch; } }
+    @keyframes caret { 50% { border-color: transparent; } 100% { border-color: transparent; } }
+    @media (prefers-reduced-motion: reduce) {
+      h1 { animation: none; border-right: 0; }
+    }
+
+    .tagline { margin: 0 0 14px; color: var(--faded); }
+    .links { margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 4px 24px; }
+
+    /* Sections */
+    section { margin-top: 38px; }
+    h2 {
+      margin: 0 0 16px;
+      font-size: 1.25rem;
+      font-weight: normal;
+      text-transform: lowercase;
+      letter-spacing: .04em;
+      padding-bottom: 6px;
+      border-bottom: 1px dashed var(--rule);
+    }
+    h2::before { content: "# "; color: var(--faded); }
+
+    .entry { margin-bottom: 24px; }
+    .entry-head {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 2px 16px;
+    }
+    h3 { margin: 0; font-size: 1.02rem; font-weight: normal; text-decoration: underline; text-underline-offset: 3px; }
+    .date { color: var(--faded); font-size: .92rem; }
+    .sub { margin: 2px 0 0; color: var(--faded); font-size: .94rem; }
+    ul.items { margin: 8px 0 0; padding: 0; list-style: none; }
+    ul.items li { position: relative; padding-left: 22px; margin-bottom: 6px; }
+    ul.items li::before { content: "-"; position: absolute; left: 4px; }
+    .status { color: var(--faded); font-size: .85rem; text-decoration: none; }
+    p.summary { margin: 0; max-width: 65ch; }
+
+    /* Skills */
+    .skill-row { display: flex; flex-wrap: wrap; gap: 0 16px; margin-bottom: 8px; }
+    .skill-row dt { flex: 0 0 120px; }
+    .skill-row dd { margin: 0; flex: 1 1 240px; }
+    dl { margin: 0; }
+
+    footer { margin-top: 44px; padding-top: 12px; border-top: 1px dashed var(--rule); color: var(--faded); font-size: .88rem; }
+
+    @media (max-width: 600px) {
+      .desk { padding: 0; }
+      .paper { padding: 32px 20px 40px; box-shadow: none; }
+      .skill-row dt { flex-basis: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="desk">
+    <div class="paper">
+
+      <header>
+        <h1>Muneeb Khan</h1>
+        <p class="tagline">Final-year AI student and developer. Bannu, Pakistan.</p>
+        <ul class="links">
+          <li><a href="https://github.com/Muneebk7">github</a></li>
+          <li><a href="https://linkedin.com/in/muneebk7">linkedin</a></li>
+        </ul>
+      </header>
+
+      <main>
+        <section aria-labelledby="summary">
+          <h2 id="summary">summary</h2>
+          <p class="summary">Artificial Intelligence undergraduate driven by curiosity and a desire to understand how things work, with interests spanning physics, astronomy, and AI. I enjoy exploring unfamiliar problems, learning across disciplines, and turning ideas into practical experiments and projects.</p>
+        </section>
+
+        <section aria-labelledby="education">
+          <h2 id="education">education</h2>
+          <div class="entry">
+            <div class="entry-head">
+              <h3>COMSATS University Islamabad</h3>
+              <span class="date">Feb 2023 – Jan 2027 (expected)</span>
+            </div>
+            <p class="sub">BS Artificial Intelligence, CGPA 3.34 / 4.00</p>
+            <ul class="items">
+              <li>Certificate of Merit for 3rd position in the BS AI cohort in the 2nd semester.</li>
+            </ul>
+          </div>
+          <div class="entry">
+            <div class="entry-head">
+              <h3>Govt. Degree College No. 2, Bannu</h3>
+              <span class="date">Sep 2020 – Jul 2022</span>
+            </div>
+            <p class="sub">Higher Secondary School Certificate (Physics, Chemistry, Biology), 93%</p>
+          </div>
+        </section>
+
+        <section aria-labelledby="research">
+          <h2 id="research">research &amp; involvement</h2>
+          <div class="entry">
+            <div class="entry-head">
+              <h3>Research Circle, COMSATS University Islamabad</h3>
+              <span class="date">Nov 2025 – present</span>
+            </div>
+            <ul class="items">
+              <li>Join weekly discussions on AI, ML, and AI-safety papers, presenting methods and real-world implications.</li>
+              <li>Practise critical reading of research and communicating science across disciplines.</li>
+              <li>Researching an extension of <em>"Is Evaluation Awareness Just Format Sensitivity? Limitations of Probe-Based Evidence Under Controlled Prompt Structure"</em>, using controlled experiments.</li>
+            </ul>
+          </div>
+          <div class="entry">
+            <div class="entry-head">
+              <h3>Google Developer Groups on Campus</h3>
+              <span class="date">Sep 2024 – present</span>
+            </div>
+            <ul class="items">
+              <li>Attended workshops on AI/ML and cloud technologies, including a session on applying generative AI to open-source satellite imagery.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section aria-labelledby="projects">
+          <h2 id="projects">projects</h2>
+
+          <div class="entry">
+            <div class="entry-head">
+              <h3>Solar panel detection from satellite imagery</h3>
+              <span class="status">ongoing</span>
+            </div>
+            <p class="sub">YOLOv8, computer vision</p>
+            <ul class="items">
+              <li>Building a YOLOv8 pipeline to find and count solar panels across Bannu City from historical satellite imagery (2022–2025).</li>
+              <li>Testing whether the available image resolution is good enough for reliable detection.</li>
+            </ul>
+          </div>
+
+          <div class="entry">
+            <div class="entry-head">
+              <h3>NASA exoplanet habitability predictor</h3>
+              <span class="date">Sep 2025 – present</span>
+            </div>
+            <p class="sub">Python, scikit-learn</p>
+            <ul class="items">
+              <li>Built a classification pipeline on 38,000+ NASA exoplanet records. Random Forest reached 99.9% accuracy, 98.3% precision, and 99.8% recall.</li>
+              <li>Raised recall from 42% to about 100% with cross-validation and decision-threshold tuning.</li>
+            </ul>
+          </div>
+
+          <div class="entry">
+            <div class="entry-head">
+              <h3>AI document similarity checker</h3>
+            </div>
+            <p class="sub">Python, LangChain, OpenAI API</p>
+            <ul class="items">
+              <li>Built a tool that scores how similar two documents are, using OpenAI embeddings and cosine similarity. Published on GitHub.</li>
+            </ul>
+          </div>
+
+          <div class="entry">
+            <div class="entry-head">
+              <h3>RAG assistant</h3>
+              <span class="status">in progress</span>
+            </div>
+            <p class="sub">Python, LangChain, LangGraph</p>
+            <ul class="items">
+              <li>Building a question-answering system that retrieves from a curated knowledge base before generating answers.</li>
+              <li>Experimenting with chunking, embeddings, and retrieval strategies.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section aria-labelledby="skills">
+          <h2 id="skills">skills</h2>
+          <dl>
+            <div class="skill-row"><dt>languages</dt><dd>Python, JavaScript, C++, Java</dd></div>
+            <div class="skill-row"><dt>web</dt><dd>HTML5, CSS3, Flexbox, responsive design</dd></div>
+            <div class="skill-row"><dt>ml / ai</dt><dd>LangChain, LangGraph, OpenAI API, RAG, scikit-learn, TensorFlow, YOLOv8, computer vision, neural networks</dd></div>
+            <div class="skill-row"><dt>tools</dt><dd>Make.com, Git / GitHub, Google Colab, Jupyter, VS Code</dd></div>
+          </dl>
+        </section>
+      </main>
+
+      <footer>Muneeb Khan, 2026</footer>
+    </div>
+  </div>
+</body>
+</html>
